@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    --fW500:500;
+    --fw700:700;
+    --fw800:800;
+}
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+p{
+    font-size: 18px;
+}
+body{
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--PaleBlue);
+    display: flex;
+    flex-direction:row;
+}
+.first{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    width: 375px;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first .container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--White);
+    font-weight: var(--fW500);
+    height: 25rem;
+    margin-top: 1rem;
+    width: 15rem;
+}
+.first .header{
+    color: var(--LightLavender);
+    font-size: 1.3rem;
+}
+.numbers{
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numbers .n1{
+    font-size: 4rem;
+    font-weight: var(--fw700);
+}
+.numbers .n2{
+    color: var(--LightLavender);
+}
+
+.sec{
+    background-color: var(--White);
+}
+.first .container .para p{
+    color: var(--LightLavender);
+    font-size: 16px;
+    position: relative;
+    bottom: 30px;
+}
+.sec{
+    width: 375px;
+    position: relative;
+    right: 1rem;
+    z-index: -1;
+    color: var(--White);
+    border-radius: 20px;
+    }
+
+.sec .container{
+    margin-left: 2.7rem;
+    margin-top: 2rem;
+    height: 23rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sec .container .list,
+.sec .container .button{
+    text-align: center;
+    font-weight: var(--fw800);
+    color: var(--DarkGrayBlue);
+    display: block;
+}
+.sec .container .header{
+    font-weight: var(--fw800);
+    font-size: 25px;
+    color: var(--DarkGrayBlue);
+}
+.sec .container .list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 19rem;
+    height: 3.5rem;
+    font-weight: var(--fW500);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+.sec .container .list:first-of-type {
+    background-color: hsl(353.33deg 100% 98.24%);
+}
+.sec .container .list:first-of-type p{
+    color: var(--LightRed);
+}
+
+.sec .container .list:nth-of-type(2) {
+    background-color: hsl(32.73deg 100% 97.84%);
+}
+.sec .container .list:nth-of-type(3) {
+    background-color: hsl(158.18deg 73.33% 97.06%);
+}
+.sec .container .list:nth-of-type(4) {
+    background-color: hsl(240deg 83.33% 97.65%);
+}
+.sec .container .button{
+    
+    font-weight: var(--fW500);
+    color: var(--White);
+    background-color: var(--DarkGrayBlue);
+    width: 19rem;
+    height: 3rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec .container .button:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+}
+.sec .container .list .icon{
+    display: flex;
+    margin-left: 10px;
+}
+.sec .container .list .icon img{
+    margin-right: 10px;
+}
+.sec .container .list .num span{
+    color: hsl(45deg 1.94% 59.61%);
+}
+@media only screen and (max-width:650px) {
+    body{
+        flex-wrap: wrap;
+    }
+    .sec{
+        right: 0px;
+        height: 27rem;
+    }
+}
